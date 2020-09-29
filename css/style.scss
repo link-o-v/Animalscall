@@ -83,7 +83,7 @@ header {
     display: flex;
 
     .header__logo {
-        background: url(../img/logo.png) no-repeat;
+        background: url(../img/logo.svg) no-repeat;
         background-size: contain;
         width: 40%;
         height: 50%;
@@ -194,6 +194,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 1;
 
         a {
             height: 100%;
@@ -257,10 +258,12 @@ h1 {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background: url(../img/pattern1.png) no-repeat;
+        background: url(../img/pattern-olive50.png) no-repeat;
         /* border-bottom: 1px solid $lgreen;
         border-top: 1px solid $lgreen; */
         box-shadow: 0px 8px 16px 0px rgba(28, 28, 28, 0.2);
+        text-shadow: 1px 1px 2px white;
+         font-weight: 800;
         background-size: cover;
         padding: $pdg;
         font-size: 1.5em;
@@ -316,7 +319,7 @@ h1 {
                     width: 25px;
                     background-color: #eee;
                     border-radius: 50%;
-                    border: 1px solid $green;
+                    border: 1px solid $grey;
                 }
 
                 /* On mouse-over, add a grey background color */
@@ -493,7 +496,7 @@ footer {
     }
 
     .footer__logo {
-        background: url(../img/logoWhite.png) no-repeat;
+        background: url(../img/logoWhite.svg) no-repeat;
         background-size: contain;
         height: 50px;
     }
