@@ -15,6 +15,9 @@ padding: 20px; */
       background-color: #669933;
       margin: 6px 0;
       transition: 0.4s; }
+  header .header__right-side__login p,
+  header .header__right-side__register p {
+    display: none; }
 
   .video-nav {
     font-size: 1.25em; }
@@ -84,6 +87,9 @@ padding: 20px; */
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end; }
+    header .header__right-side a {
+      width: 40%;
+      height: 40%; }
     header .header__right-side .header__right-side__lang {
       order: 3; }
     header .header__right-side .header__right-side__burger {

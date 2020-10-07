@@ -104,17 +104,12 @@ header {
             cursor: pointer;
             border: none;
             outline: none;
-            padding: 0 10px;
+            padding-left: 10px;
 
             /* border-radius: 10px; */
             img {
-                width: 20px;
-                padding-right: 5px;
-            }
-
-            i {
-                color: $green;
-                padding-left: 5px;
+                height: 20px;
+                margin-right: 5px;
             }
 
             &:hover,
@@ -157,15 +152,30 @@ header {
             text-decoration: underline;
             text-decoration-color: $green;
             cursor: pointer;
+            display: flex;
+
+            img {
+
+                width: 1.25em;
+                margin-right: 5px;
+
+            }
+        }
+
+        .header__right-side__login:visited,
+        .header__right-side__register:visited {
+            color: $grey;
         }
 
         .header__right-side__login:hover,
         .header__right-side__login:focus,
         .header__right-side__register:hover,
-        .header__right-side__register:focus {
+        .header__right-side__register:focus,
+            {
             color: $green;
-            // text-decoration: none;
+
         }
+
 
         .header__right-side__burger {
             display: none;
@@ -186,7 +196,7 @@ header {
         height: 110px;
         color: $white;
         background-color: $green;
-        text-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
         user-select: none;
         border-radius: 0px 0px 90px 90px;
         margin: 0;
@@ -201,7 +211,7 @@ header {
             width: 100%;
             color: $white;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             border-right: 1px solid lighten($grey, 20%);
             padding: 5px;
@@ -209,6 +219,8 @@ header {
             img {
                 width: 2.5em;
                 padding-right: 10px;
+                transition: all 500ms ease;
+
             }
         }
 
@@ -226,6 +238,17 @@ header {
 
         a:nth-child(3) {
             flex-direction: column;
+
+            img {
+                width: 1.5em;
+            }
+
+            &:hover {
+                img {
+                    animation: bounce 1s;
+                }
+            }
+
         }
 
         a:hover,
@@ -239,6 +262,21 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 55px !important;
+    margin: 0 !important;
+
+    /* img {
+        width: 1.5em !important;
+    } */
+
+    a {
+        font-size: 0.8em !important;
+    }
+
+    a:nth-child(3) {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
 }
 
 .sticky+div {
@@ -262,12 +300,12 @@ h1 {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
-        background: url(../img/pattern-olive50.png) no-repeat;
+        background: url(../img/pattern-olive50.svg) no-repeat;
         /* border-bottom: 1px solid $lgreen;
         border-top: 1px solid $lgreen; */
         box-shadow: 0px 8px 16px 0px rgba(28, 28, 28, 0.2);
         // text-shadow: 1px 1px 2px white;
-         font-weight: 800;
+        font-weight: 800;
         background-size: cover;
         padding: $pdg;
         font-size: 1.5em;
@@ -289,7 +327,43 @@ h1 {
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
-            background: rgba(255, 255, 255, 0.1);
+
+            // background: rgba(255, 255, 255, 0.1);
+            label {
+                text-shadow:
+                    -0 -3px 6px rgba(255, 255, 255, 0.3),
+                    0 -3px 6px rgba(255, 255, 255, 0.3),
+                    -0 3px 6px rgba(255, 255, 255, 0.3),
+                    0 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -0 6px rgba(255, 255, 255, 0.3),
+                    3px -0 6px rgba(255, 255, 255, 0.3),
+                    -3px 0 6px rgba(255, 255, 255, 0.3),
+                    3px 0 6px rgba(255, 255, 255, 0.3),
+                    -1px -3px 6px rgba(255, 255, 255, 0.3),
+                    1px -3px 6px rgba(255, 255, 255, 0.3),
+                    -1px 3px 6px rgba(255, 255, 255, 0.3),
+                    1px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -1px 6px rgba(255, 255, 255, 0.3),
+                    3px -1px 6px rgba(255, 255, 255, 0.3),
+                    -3px 1px 6px rgba(255, 255, 255, 0.3),
+                    3px 1px 6px rgba(255, 255, 255, 0.3),
+                    -2px -3px 6px rgba(255, 255, 255, 0.3),
+                    2px -3px 6px rgba(255, 255, 255, 0.3),
+                    -2px 3px 6px rgba(255, 255, 255, 0.3),
+                    2px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -2px 6px rgba(255, 255, 255, 0.3),
+                    3px -2px 6px rgba(255, 255, 255, 0.3),
+                    -3px 2px 6px rgba(255, 255, 255, 0.3),
+                    3px 2px 6px rgba(255, 255, 255, 0.3),
+                    -3px -3px 6px rgba(255, 255, 255, 0.3),
+                    3px -3px 6px rgba(255, 255, 255, 0.3),
+                    -3px 3px 6px rgba(255, 255, 255, 0.3),
+                    3px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -3px 6px rgba(255, 255, 255, 0.3),
+                    3px -3px 6px rgba(255, 255, 255, 0.3),
+                    -3px 3px 6px rgba(255, 255, 255, 0.3),
+                    3px 3px 6px rgba(255, 255, 255, 0.3);
+            }
         }
 
         .search-animal__form-1 {
@@ -394,13 +468,14 @@ h1 {
             padding: 14px 60px;
             border: none;
             box-shadow: none;
+            text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.4);
             margin-bottom: 2.5em;
 
             &:hover,
             &:focus {
                 background-color: $lgreen;
                 color: $white;
-                text-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
+                text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
             }
         }
     }
@@ -414,7 +489,7 @@ h1 {
 }
 
 .our-mission {
-    background: url(../img/FPixelSmear1.png);
+    background: url(../img/creamBG.svg);
     background-size: cover;
     margin-top: -5px;
     // background-color: rgba(235, 233, 181, 0.8);
@@ -464,7 +539,7 @@ h1 {
     // height: 68px;
     font-size: 1em;
     color: $white;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
     user-select: none;
     padding: 10px 25px;
     background-color: $green;
@@ -521,13 +596,45 @@ footer {
         display: flex;
         justify-content: space-between;
 
-        i {
-            color: $white;
+        div {
+            width: 40px;
+            height: 40px;
+        }
 
-            &:hover,
-            &:focus {
-                color: $green;
+        .footer__social-1 {
+            background: url(../img/facebook-square-brands-w.svg) no-repeat;
+            background-size: contain;
+
+            &:focus,
+            &:hover {
+                background-image: url(../img/facebook-square-brands-g.svg);
             }
+
+
+        }
+
+        .footer__social-2 {
+            background: url(../img/instagram-square-brands-w.svg) no-repeat;
+            background-size: contain;
+
+            &:focus,
+            &:hover {
+                background-image: url(../img/instagram-square-brands-g.svg);
+            }
+
+
+        }
+
+        .footer__social-3 {
+            background: url(../img/twitter-square-brands-w.svg) no-repeat;
+            background-size: contain;
+
+            &:focus,
+            &:hover {
+                background-image: url(../img/twitter-square-brands-g.svg);
+            }
+
+
         }
     }
 
@@ -538,5 +645,25 @@ footer {
 
     .footer__span {
         text-align: center;
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(5px);
+        transform: translateY(5px);
+    }
+
+    40% {
+        transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
     }
 }
