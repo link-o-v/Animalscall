@@ -1,0 +1,15 @@
+.article {
+  padding: 0 9%; }
+  .article .article__pic {
+    background: url(../img/dog-4364620_1920.jpg) no-repeat center;
+    background-size: contain;
+    height: 300px;
+    margin-bottom: 1em; }
+  .article .article__text {
+    margin-bottom: 1em; }
+
+@media screen and (max-width: 500px) {
+  .article .article__pic {
+    height: 200px; } }
+
+/*# sourceMappingURL=article.css.map */

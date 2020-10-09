@@ -109,6 +109,9 @@ padding: 20px; */
 
   .video-nav iframe,
   .what-can-I-do iframe {
-    height: 300px; } }
+    height: 300px; }
+
+  .news__pic {
+    height: 200px; } }
 
 /*# sourceMappingURL=media.css.map */

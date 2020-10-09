@@ -1,0 +1,21 @@
+.news .news__txt .news__date {
+  display: flex;
+  align-items: baseline;
+  height: 1.5em; }
+  .news .news__txt .news__date .news__calendar {
+    background: url(../img/calendar-alt-solid.svg) no-repeat;
+    background-size: contain;
+    width: 1.5em;
+    height: 1.5em;
+    padding-right: 10px; }
+.news .news__txt .news__pic {
+  background: url(../img/dog-4364620_1920.jpg) no-repeat;
+  background-size: contain;
+  height: 300px;
+  margin-bottom: 0.5em; }
+
+@media screen and (max-width: 500px) {
+  .news .news__txt .news__pic {
+    height: 200px; } }
+
+/*# sourceMappingURL=news.css.map */
