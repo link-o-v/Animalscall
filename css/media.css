@@ -25,6 +25,8 @@ padding: 20px; */
       height: 400px; }
     .video-nav .video-nav__menu {
       display: none; }
+    .video-nav div {
+      padding: 0; }
 
   h1 {
     padding-top: 50px;
