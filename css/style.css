@@ -220,7 +220,8 @@ h1 {
     background-color: #FBF9F9;
     border: 1px solid rgba(28, 28, 28, 0.8);
     color: rgba(28, 28, 28, 0.8);
-    padding: 7px; }
+    padding: 7px;
+    outline: none; }
   .search-animal .search-animal__form .s-form {
     margin-top: 2.5em;
     display: flex;
@@ -416,10 +417,10 @@ footer {
     transform: translateY(5px);
     transform: translateY(5px); }
   40% {
-    transform: translateY(-15px);
-    transform: translateY(-15px); }
+    transform: translateY(0px);
+    transform: translateY(0px); }
   80% {
-    transform: translateY(-10px);
-    transform: translateY(-10px); } }
+    transform: translateY(0px);
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=style.css.map */

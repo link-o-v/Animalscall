@@ -125,7 +125,7 @@ $pdg: 0 9%;
     }
 }
 @media screen and (max-width: 650px) {
-    header {
+    /* header {
         .header__right-side {
             flex-wrap: wrap;
             flex-direction: column;
@@ -142,7 +142,7 @@ $pdg: 0 9%;
                 align-self: flex-end;
             }
         }
-    }
+    } */
     footer {
         font-size: 12px;
         .footer__logo,
@@ -158,13 +158,19 @@ $pdg: 0 9%;
     body {
         font-size: 12px;
     }
+    header{
+        .header__logo{
+            width: 30%;
+        }
+        .header__right-side{
+            width: 70%;
+        }
+    }
     .video-nav,
     .what-can-I-do {
         iframe {
             height: 300px;
         }
     }
-    .news__pic{
-        height: 200px;
-    }
+    
 }

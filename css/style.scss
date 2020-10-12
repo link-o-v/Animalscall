@@ -319,6 +319,7 @@ h1 {
             border: 1px solid $grey;
             color: $grey;
             padding: 7px;
+            outline: none;
 
         }
 
@@ -659,11 +660,11 @@ footer {
     }
 
     40% {
-        transform: translateY(-15px);
-        transform: translateY(-15px);
+        transform: translateY(0px);
+        transform: translateY(0px);
     }
     80% {
-        transform: translateY(-10px);
-        transform: translateY(-10px);
+        transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
