@@ -53,16 +53,34 @@ a {
     width: 2em;
     padding-right: 10%; }
 
+.logo {
+  font-family: "Bangers", cursive;
+  font-size: 2.25em;
+  letter-spacing: 0.15em;
+  color: rgba(28, 28, 28, 0.8);
+  letter-spacing: 0.15em;
+  text-align: right; }
+  .logo p {
+    font-family: "Sanchez", serif;
+    font-size: 0.3em;
+    color: #FBF9F9;
+    letter-spacing: 0.15em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    background-color: #669933;
+    border-radius: 30px;
+    width: fit-content;
+    float: right;
+    padding: 0 5px; }
+
 header {
   height: 6.25em;
   width: 100%;
   padding: 0 9%;
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
   header .header__logo {
-    background: url(../img/logo.svg) no-repeat;
-    background-size: contain;
-    width: 40%;
-    height: 50%;
+    /*  background: url(../img/logo.svg) no-repeat;
+    background-size: contain; */
     align-self: center; }
   header .header__right-side {
     width: 60%;
@@ -368,16 +386,13 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
-  footer .footer__logo,
   footer .footer__social {
     width: 40%; }
   footer .footer__a,
   footer .footer__span {
     width: 100%; }
   footer .footer__logo {
-    background: url(../img/logoWhite.svg) no-repeat;
-    background-size: contain;
-    height: 50px; }
+    color: #FBF9F9; }
   footer a {
     color: #FBF9F9; }
     footer a:hover, footer a:focus {
