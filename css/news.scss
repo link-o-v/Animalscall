@@ -1,12 +1,62 @@
 .news {
+    padding: 0;
     .news__txt {
-       
-
+        .news__container:nth-child(odd) {
+            background: url(../img/cute-bone-pattern-yellow-background.svg);
+            height: 100%;
+            width: 100%;
+            // background-size: contain;
+            text-shadow:
+                    -0 -3px 6px rgba(255, 255, 255, 0.3),
+                    0 -3px 6px rgba(255, 255, 255, 0.3),
+                    -0 3px 6px rgba(255, 255, 255, 0.3),
+                    0 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -0 6px rgba(255, 255, 255, 0.3),
+                    3px -0 6px rgba(255, 255, 255, 0.3),
+                    -3px 0 6px rgba(255, 255, 255, 0.3),
+                    3px 0 6px rgba(255, 255, 255, 0.3),
+                    -1px -3px 6px rgba(255, 255, 255, 0.3),
+                    1px -3px 6px rgba(255, 255, 255, 0.3),
+                    -1px 3px 6px rgba(255, 255, 255, 0.3),
+                    1px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -1px 6px rgba(255, 255, 255, 0.3),
+                    3px -1px 6px rgba(255, 255, 255, 0.3),
+                    -3px 1px 6px rgba(255, 255, 255, 0.3),
+                    3px 1px 6px rgba(255, 255, 255, 0.3),
+                    -2px -3px 6px rgba(255, 255, 255, 0.3),
+                    2px -3px 6px rgba(255, 255, 255, 0.3),
+                    -2px 3px 6px rgba(255, 255, 255, 0.3),
+                    2px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -2px 6px rgba(255, 255, 255, 0.3),
+                    3px -2px 6px rgba(255, 255, 255, 0.3),
+                    -3px 2px 6px rgba(255, 255, 255, 0.3),
+                    3px 2px 6px rgba(255, 255, 255, 0.3),
+                    -3px -3px 6px rgba(255, 255, 255, 0.3),
+                    3px -3px 6px rgba(255, 255, 255, 0.3),
+                    -3px 3px 6px rgba(255, 255, 255, 0.3),
+                    3px 3px 6px rgba(255, 255, 255, 0.3),
+                    -3px -3px 6px rgba(255, 255, 255, 0.3),
+                    3px -3px 6px rgba(255, 255, 255, 0.3),
+                    -3px 3px 6px rgba(255, 255, 255, 0.3),
+                    3px 3px 6px rgba(255, 255, 255, 0.3);
+        }
+        .news__container:nth-child(even) {
+            background: url(../img/FPixelSmear.svg);
+            height: 100%;
+            width: 100%;
+            background-size: contain;
+        }
+       .news__container:last-child {
+    
+       background-size: cover;
+}
+        .news__one-new {
+            padding: 20px 9%;
+        }
         .news__date {
             display: flex;
             align-items: baseline;
             height: 1.5em;
-
             .news__calendar {
                 background: url(../img/calendar-alt-solid.svg) no-repeat;
                 background-size: contain;
@@ -15,7 +65,6 @@
                 padding-right: 10px;
             }
         }
-
         .news__pic {
             background: url(../img/dog-4364620_1920.jpg) no-repeat;
             background-size: contain;
@@ -25,8 +74,14 @@
     }
 }
 @media screen and (max-width: 500px) {
-	.news .news__txt .news__pic{
-		height: 200px;
-	}
+    .news .news__txt .news__pic {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 980px){
+	.news .news__txt .news__container:nth-child(even) {
+            width: 100%;
+            background-size: cover;
+        }
 	
 }

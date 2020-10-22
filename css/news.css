@@ -1,21 +1,41 @@
-.news .news__txt .news__date {
-  display: flex;
-  align-items: baseline;
-  height: 1.5em; }
-  .news .news__txt .news__date .news__calendar {
-    background: url(../img/calendar-alt-solid.svg) no-repeat;
+.news {
+  padding: 0; }
+  .news .news__txt .news__container:nth-child(odd) {
+    background: url(../img/cute-bone-pattern-yellow-background.svg);
+    height: 100%;
+    width: 100%;
+    text-shadow: 0 -3px 6px rgba(255, 255, 255, 0.3), 0 -3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -1px -3px 6px rgba(255, 255, 255, 0.3), 1px -3px 6px rgba(255, 255, 255, 0.3), -1px 3px 6px rgba(255, 255, 255, 0.3), 1px 3px 6px rgba(255, 255, 255, 0.3), -3px -1px 6px rgba(255, 255, 255, 0.3), 3px -1px 6px rgba(255, 255, 255, 0.3), -3px 1px 6px rgba(255, 255, 255, 0.3), 3px 1px 6px rgba(255, 255, 255, 0.3), -2px -3px 6px rgba(255, 255, 255, 0.3), 2px -3px 6px rgba(255, 255, 255, 0.3), -2px 3px 6px rgba(255, 255, 255, 0.3), 2px 3px 6px rgba(255, 255, 255, 0.3), -3px -2px 6px rgba(255, 255, 255, 0.3), 3px -2px 6px rgba(255, 255, 255, 0.3), -3px 2px 6px rgba(255, 255, 255, 0.3), 3px 2px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3); }
+  .news .news__txt .news__container:nth-child(even) {
+    background: url(../img/FPixelSmear.svg);
+    height: 100%;
+    width: 100%;
+    background-size: contain; }
+  .news .news__txt .news__container:last-child {
+    background-size: cover; }
+  .news .news__txt .news__one-new {
+    padding: 20px 9%; }
+  .news .news__txt .news__date {
+    display: flex;
+    align-items: baseline;
+    height: 1.5em; }
+    .news .news__txt .news__date .news__calendar {
+      background: url(../img/calendar-alt-solid.svg) no-repeat;
+      background-size: contain;
+      width: 1.5em;
+      height: 1.5em;
+      padding-right: 10px; }
+  .news .news__txt .news__pic {
+    background: url(../img/dog-4364620_1920.jpg) no-repeat;
     background-size: contain;
-    width: 1.5em;
-    height: 1.5em;
-    padding-right: 10px; }
-.news .news__txt .news__pic {
-  background: url(../img/dog-4364620_1920.jpg) no-repeat;
-  background-size: contain;
-  height: 300px;
-  margin-bottom: 0.5em; }
+    height: 300px;
+    margin-bottom: 0.5em; }
 
 @media screen and (max-width: 500px) {
   .news .news__txt .news__pic {
     height: 200px; } }
+@media screen and (max-width: 980px) {
+  .news .news__txt .news__container:nth-child(even) {
+    width: 100%;
+    background-size: cover; } }
 
 /*# sourceMappingURL=news.css.map */

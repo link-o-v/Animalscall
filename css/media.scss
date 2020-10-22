@@ -7,12 +7,10 @@ serif;
 $logo-font: 'Bangers',
 cursive;
 $pdg: 0 9%;
-
 @media screen and (max-width: 940px) {
     body {
         font-size: 14px;
     }
-
     header {
         .header__right-side {
             .header__right-side__burger {
@@ -22,7 +20,6 @@ $pdg: 0 9%;
               right:0;
               padding: 20px; */
                 cursor: pointer;
-
                 // align-self: flex-start;
                 div {
                     width: 35px;
@@ -33,7 +30,6 @@ $pdg: 0 9%;
                 }
             }
         }
-
         .header__right-side__login,
         .header__right-side__register {
             p {
@@ -41,109 +37,87 @@ $pdg: 0 9%;
             }
         }
     }
-
     .video-nav {
         font-size: 1.25em;
-
         iframe {
             height: 400px;
         }
-
         .video-nav__menu {
             display: none;
         }
-
         div {
             padding: 0;
         }
     }
-
-
     h1 {
         padding-top: 50px;
         margin-bottom: 20px;
     }
-
     .search-animal {
         .search-animal__form {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-
             .s-form {
                 flex-direction: column;
                 align-items: flex-start;
                 margin-top: 1em;
             }
-
             .search-animal__form-1,
             .search-animal__form-2 {
                 width: 50%;
-
                 label {
                     width: 80%;
                     margin-left: 15%;
                     padding-bottom: 10px;
                 }
             }
-
             .search-animal__form-1 {
                 label:nth-child(1) {
                     width: 80%;
                 }
             }
-
             .search-animal__btn {
                 margin-bottom: 1em;
             }
         }
     }
-
     .what-can-I-do {
         iframe {
             height: 400px;
         }
     }
-
     .our-mission {
         .our-mission__content {
             justify-content: center;
-
             img,
             p {
                 width: 80%;
             }
-
             img {
                 margin-bottom: 10px;
             }
-
             .our-mission__txt-2 {
                 order: 2;
             }
         }
     }
-
-    .news {
+     
         .news__btn {
             margin-bottom: 50px;
         }
-    }
-
+    
     footer {
         height: 120px;
-
         .footer__logo {
             height: 30px;
         }
-
         
         .footer__social,
         .footer__a,
         .footer__span {
             width: 20%;
         }
-
         .footer__a,
         .footer__span {
             display: flex;
@@ -153,9 +127,7 @@ $pdg: 0 9%;
         }
     }
 }
-
 @media screen and (max-width: 650px) {
-
     /* header {
         .header__right-side {
             flex-wrap: wrap;
@@ -181,7 +153,6 @@ $pdg: 0 9%;
     }
     footer {
         font-size: 12px;
-
         
         .footer__social,
         .footer__a,
@@ -191,7 +162,6 @@ $pdg: 0 9%;
         }
     }
 }
-
 @media screen and (max-width: 400px) {
     body {
         font-size: 12px;
@@ -202,17 +172,14 @@ $pdg: 0 9%;
        }
     header {
          
-
         .header__right-side {
             width: 70%;
         }
     }
-
     .video-nav,
     .what-can-I-do {
         iframe {
             height: 300px;
         }
     }
-
 }

@@ -1,22 +1,97 @@
-$pdg: 0 9%;
-
+main{
+	display: flex;
+	flex-direction: column;
+}
 .article {
-    padding: $pdg;
-
     .article__pic {
         background: url(../img/dog-4364620_1920.jpg) no-repeat center;
         background-size: contain;
-
         height: 300px;
         margin-bottom: 1em;
     }
-    .article__text{
-    	margin-bottom: 1em;
+    .article__text {
+        padding: 9%;
+        margin-bottom: 1em;
+        background: url(../img/cute-bone-pattern-yellow-background.svg);
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        text-shadow:
+            -0 -3px 6px rgba(255, 255, 255, 0.3),
+            0 -3px 6px rgba(255, 255, 255, 0.3),
+            -0 3px 6px rgba(255, 255, 255, 0.3),
+            0 3px 6px rgba(255, 255, 255, 0.3),
+            -3px -0 6px rgba(255, 255, 255, 0.3),
+            3px -0 6px rgba(255, 255, 255, 0.3),
+            -3px 0 6px rgba(255, 255, 255, 0.3),
+            3px 0 6px rgba(255, 255, 255, 0.3),
+            -1px -3px 6px rgba(255, 255, 255, 0.3),
+            1px -3px 6px rgba(255, 255, 255, 0.3),
+            -1px 3px 6px rgba(255, 255, 255, 0.3),
+            1px 3px 6px rgba(255, 255, 255, 0.3),
+            -3px -1px 6px rgba(255, 255, 255, 0.3),
+            3px -1px 6px rgba(255, 255, 255, 0.3),
+            -3px 1px 6px rgba(255, 255, 255, 0.3),
+            3px 1px 6px rgba(255, 255, 255, 0.3),
+            -2px -3px 6px rgba(255, 255, 255, 0.3),
+            2px -3px 6px rgba(255, 255, 255, 0.3),
+            -2px 3px 6px rgba(255, 255, 255, 0.3),
+            2px 3px 6px rgba(255, 255, 255, 0.3),
+            -3px -2px 6px rgba(255, 255, 255, 0.3),
+            3px -2px 6px rgba(255, 255, 255, 0.3),
+            -3px 2px 6px rgba(255, 255, 255, 0.3),
+            3px 2px 6px rgba(255, 255, 255, 0.3),
+            -3px -3px 6px rgba(255, 255, 255, 0.3),
+            3px -3px 6px rgba(255, 255, 255, 0.3),
+            -3px 3px 6px rgba(255, 255, 255, 0.3),
+            3px 3px 6px rgba(255, 255, 255, 0.3),
+            -3px -3px 6px rgba(255, 255, 255, 0.3),
+            3px -3px 6px rgba(255, 255, 255, 0.3),
+            -3px 3px 6px rgba(255, 255, 255, 0.3),
+            3px 3px 6px rgba(255, 255, 255, 0.3);
     }
 }
+.news__btn {
+	align-self: flex-end;
+    img {
+        height: 15px;
+        padding-right: 10px;
+        
+    }
+    &:hover {
+        img {
+            animation: bounce-left 1s;
+           
+        }
+    }
+}
+.news__btn-top {
+    align-self: flex-start;
+    border-radius: 0px 30px 30px 0px;
+    margin: 30px 0 0 0;
+}
+
 @media screen and (max-width: 500px) {
-	.article .article__pic{
-		height: 200px;
-	}
-	
+    .article .article__pic {
+        height: 200px;
+    }
+}
+
+
+@keyframes bounce-left {
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    80% {
+        transform: translateX(0px);
+        transform: translateX(0px);
+    }
 }

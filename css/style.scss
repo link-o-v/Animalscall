@@ -75,29 +75,31 @@ a {
         padding-right: 10%;
     }
 }
-.logo{
-    font-family: $logo-font;
-        font-size: 2.25em;
-        
-        letter-spacing: 0.15em;
-        color: $grey;
-        letter-spacing: 0.15em;
-        text-align: right;
-        p {
-            font-family: $font;
-            font-size: 0.3em;
-            // line-height: 14px;
-            color: $white;
-            letter-spacing: 0.15em;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-            background-color: $green;
-            border-radius: 30px;
-            width: fit-content;
-            float: right;
-            padding: 0 5px;
 
-        }
+.logo {
+    font-family: $logo-font;
+    font-size: 2.25em;
+
+    letter-spacing: 0.15em;
+    color: $grey;
+    letter-spacing: 0.15em;
+    text-align: right;
+
+    p {
+        font-family: $font;
+        font-size: 0.3em;
+        // line-height: 14px;
+        color: $white;
+        letter-spacing: 0.15em;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        background-color: $green;
+        border-radius: 30px;
+        width: fit-content;
+        float: right;
+        padding: 0 5px;
+    }
 }
+
 header {
     height: 6.25em;
     width: 100%;
@@ -105,16 +107,20 @@ header {
     display: flex;
     justify-content: space-around;
 
-    .header__logo {
-        
+    a:hover,
+    a:focus {
+        color: $green;
+    }
 
-        
+    .header__logo {
+
 
         /*  background: url(../img/logo.svg) no-repeat;
         background-size: contain; */
         // width: 40%;
         // height: 50%;
         align-self: center;
+
     }
 
     .header__right-side {
@@ -182,10 +188,8 @@ header {
             display: flex;
 
             img {
-
                 width: 1.25em;
                 margin-right: 5px;
-
             }
         }
 
@@ -200,9 +204,7 @@ header {
         .header__right-side__register:focus,
             {
             color: $green;
-
         }
-
 
         .header__right-side__burger {
             display: none;
@@ -247,14 +249,12 @@ header {
                 width: 2.5em;
                 padding-right: 10px;
                 transition: all 500ms ease;
-
             }
         }
 
         a:nth-child(1) {
             border-bottom-left-radius: 90px;
             padding-left: 25px;
-
         }
 
         a:nth-child(5) {
@@ -275,7 +275,6 @@ header {
                     animation: bounce 1s;
                 }
             }
-
         }
 
         a:hover,
@@ -295,7 +294,6 @@ header {
     /* img {
         width: 1.5em !important;
     } */
-
     a {
         font-size: 0.8em !important;
     }
@@ -347,7 +345,6 @@ h1 {
             color: $grey;
             padding: 7px;
             outline: none;
-
         }
 
         .s-form {
@@ -595,7 +592,6 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    
     .footer__social {
         width: 40%;
     }
@@ -638,8 +634,6 @@ footer {
             &:hover {
                 background-image: url(../img/facebook-square-brands-g.svg);
             }
-
-
         }
 
         .footer__social-2 {
@@ -650,8 +644,6 @@ footer {
             &:hover {
                 background-image: url(../img/instagram-square-brands-g.svg);
             }
-
-
         }
 
         .footer__social-3 {
@@ -662,8 +654,6 @@ footer {
             &:hover {
                 background-image: url(../img/twitter-square-brands-g.svg);
             }
-
-
         }
     }
 

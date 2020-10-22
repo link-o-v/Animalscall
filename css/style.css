@@ -78,6 +78,9 @@ header {
   padding: 0 9%;
   display: flex;
   justify-content: space-around; }
+  header a:hover,
+  header a:focus {
+    color: #669933; }
   header .header__logo {
     /*  background: url(../img/logo.svg) no-repeat;
     background-size: contain; */
