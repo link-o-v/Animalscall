@@ -2,19 +2,29 @@ main {
   display: flex;
   flex-direction: column; }
 
-.article .article__pic {
-  background: url(../img/dog-4364620_1920.jpg) no-repeat center;
-  background-size: contain;
-  height: 300px;
-  margin-bottom: 1em; }
-.article .article__text {
-  padding: 9%;
-  margin-bottom: 1em;
-  background: url(../img/cute-bone-pattern-yellow-background.svg);
-  height: 100%;
-  width: 100%;
-  background-size: contain;
-  text-shadow: 0 -3px 6px rgba(255, 255, 255, 0.3), 0 -3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -1px -3px 6px rgba(255, 255, 255, 0.3), 1px -3px 6px rgba(255, 255, 255, 0.3), -1px 3px 6px rgba(255, 255, 255, 0.3), 1px 3px 6px rgba(255, 255, 255, 0.3), -3px -1px 6px rgba(255, 255, 255, 0.3), 3px -1px 6px rgba(255, 255, 255, 0.3), -3px 1px 6px rgba(255, 255, 255, 0.3), 3px 1px 6px rgba(255, 255, 255, 0.3), -2px -3px 6px rgba(255, 255, 255, 0.3), 2px -3px 6px rgba(255, 255, 255, 0.3), -2px 3px 6px rgba(255, 255, 255, 0.3), 2px 3px 6px rgba(255, 255, 255, 0.3), -3px -2px 6px rgba(255, 255, 255, 0.3), 3px -2px 6px rgba(255, 255, 255, 0.3), -3px 2px 6px rgba(255, 255, 255, 0.3), 3px 2px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3); }
+.article {
+  text-align: center; }
+  .article h1 {
+    padding: 0; }
+  .article .article__pic {
+    /*  background: url(../img/dog-4364620_1920.jpg) no-repeat center;
+     background-size: contain; */
+    height: 300px;
+    margin-bottom: 1em;
+    position: relative;
+    animation: move 1s 200ms; }
+  .article .article__text {
+    text-align: left;
+    padding: 9%;
+    margin-bottom: 1em;
+    background: url(../img/cute-bone-pattern-yellow-background.svg);
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    text-shadow: 0 -3px 6px rgba(255, 255, 255, 0.3), 0 -3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), 0 3px 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -3px 0 6px rgba(255, 255, 255, 0.3), 3px 0 6px rgba(255, 255, 255, 0.3), -1px -3px 6px rgba(255, 255, 255, 0.3), 1px -3px 6px rgba(255, 255, 255, 0.3), -1px 3px 6px rgba(255, 255, 255, 0.3), 1px 3px 6px rgba(255, 255, 255, 0.3), -3px -1px 6px rgba(255, 255, 255, 0.3), 3px -1px 6px rgba(255, 255, 255, 0.3), -3px 1px 6px rgba(255, 255, 255, 0.3), 3px 1px 6px rgba(255, 255, 255, 0.3), -2px -3px 6px rgba(255, 255, 255, 0.3), 2px -3px 6px rgba(255, 255, 255, 0.3), -2px 3px 6px rgba(255, 255, 255, 0.3), 2px 3px 6px rgba(255, 255, 255, 0.3), -3px -2px 6px rgba(255, 255, 255, 0.3), 3px -2px 6px rgba(255, 255, 255, 0.3), -3px 2px 6px rgba(255, 255, 255, 0.3), 3px 2px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.3), 3px -3px 6px rgba(255, 255, 255, 0.3), -3px 3px 6px rgba(255, 255, 255, 0.3), 3px 3px 6px rgba(255, 255, 255, 0.3); }
+  .article p {
+    position: relative;
+    animation: move 2s 200ms; }
 
 .news__btn {
   align-self: flex-end; }
@@ -45,5 +55,10 @@ main {
   80% {
     transform: translateX(0px);
     transform: translateX(0px); } }
+@keyframes move {
+  from {
+    left: -100%; }
+  to {
+    left: 0; } }
 
 /*# sourceMappingURL=article.css.map */

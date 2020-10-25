@@ -1,15 +1,27 @@
-main{
-	display: flex;
-	flex-direction: column;
+main {
+    display: flex;
+    flex-direction: column;
 }
+
 .article {
+text-align: center;
+    h1 {
+        padding: 0;
+    }
+
     .article__pic {
-        background: url(../img/dog-4364620_1920.jpg) no-repeat center;
-        background-size: contain;
+
+        /*  background: url(../img/dog-4364620_1920.jpg) no-repeat center;
+         background-size: contain; */
         height: 300px;
         margin-bottom: 1em;
+        position: relative;
+        
+        animation: move 1s 200ms;
     }
+
     .article__text {
+    	text-align: left;
         padding: 9%;
         margin-bottom: 1em;
         background: url(../img/cute-bone-pattern-yellow-background.svg);
@@ -50,21 +62,30 @@ main{
             -3px 3px 6px rgba(255, 255, 255, 0.3),
             3px 3px 6px rgba(255, 255, 255, 0.3);
     }
+
+    p {
+        position: relative;
+        animation: move 2s 200ms;
+    }
 }
+
 .news__btn {
-	align-self: flex-end;
+    align-self: flex-end;
+
     img {
         height: 15px;
         padding-right: 10px;
-        
+
     }
+
     &:hover {
         img {
             animation: bounce-left 1s;
-           
+
         }
     }
 }
+
 .news__btn-top {
     align-self: flex-start;
     border-radius: 0px 30px 30px 0px;
@@ -79,6 +100,7 @@ main{
 
 
 @keyframes bounce-left {
+
     0%,
     20%,
     60%,
@@ -86,12 +108,25 @@ main{
         transform: translateX(-5px);
         transform: translateX(-5px);
     }
+
     40% {
         transform: translateX(0px);
         transform: translateX(0px);
     }
+
     80% {
         transform: translateX(0px);
         transform: translateX(0px);
     }
+}
+
+@keyframes move {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+
 }
