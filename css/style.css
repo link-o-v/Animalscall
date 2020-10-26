@@ -204,7 +204,7 @@ header {
       width: 1.5em !important;
   } */ }
   .sticky a {
-    font-size: 0.8em !important; }
+    font-size: 0.7em !important; }
   .sticky a:nth-child(3) {
     flex-direction: row !important;
     justify-content: space-evenly !important; }
