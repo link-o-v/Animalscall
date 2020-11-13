@@ -5,7 +5,7 @@ main {
 .article {
   text-align: center; }
   .article h1 {
-    padding: 0; }
+    padding: 10px 0 0; }
   .article .article__pic {
     /*  background: url(../img/dog-4364620_1920.jpg) no-repeat center;
      background-size: contain; */

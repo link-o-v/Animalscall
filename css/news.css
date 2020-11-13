@@ -44,13 +44,19 @@ background-size: contain; */
   animation: fadeInHorizontal 2s ease-out 1 forwards;
   opacity: 1; }
 
-@media screen and (max-width: 500px) {
-  .news .news__all-news .news__pic {
-    height: 200px; } }
 @media screen and (max-width: 980px) {
   .news .news__all-news .news__container:nth-child(even) {
     width: 100%;
-    background-size: cover; } }
+    background-size: cover; }
+
+  h1 {
+    padding-top: 10px; } }
+@media screen and (max-width: 500px) {
+  .news .news__all-news .news__pic {
+    height: 200px; }
+
+  h1 {
+    padding-top: 0; } }
 @keyframes fadeInHorizontal {
   0% {
     height: 0;

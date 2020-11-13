@@ -100,7 +100,7 @@ header {
       outline: none;
       padding-left: 10px;
       /* border-radius: 10px; */ }
-      header .header__right-side .lang-btn img {
+      header .header__right-side .lang-btn svg {
         height: 20px;
         margin-right: 5px; }
       header .header__right-side .lang-btn:hover, header .header__right-side .lang-btn:focus {
@@ -119,7 +119,7 @@ header {
       header .header__right-side .lang-dropdown a {
         display: block;
         background: #FBF9F9; }
-      header .header__right-side .lang-dropdown img {
+      header .header__right-side .lang-dropdown svg {
         width: 20px; }
     header .header__right-side .header__right-side__lang:hover .lang-dropdown {
       display: block; }
@@ -130,8 +130,8 @@ header {
       text-decoration-color: #669933;
       cursor: pointer;
       display: flex; }
-      header .header__right-side .header__right-side__login img,
-      header .header__right-side .header__right-side__register img {
+      header .header__right-side .header__right-side__login svg,
+      header .header__right-side .header__right-side__register svg {
         width: 1.25em;
         margin-right: 5px; }
     header .header__right-side .header__right-side__login:visited,

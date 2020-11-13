@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,8 @@
     <link rel="stylesheet" href="css/news.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Sanchez&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/ico" href="favicon.ico">
- 
 </head>
+
 <body>
     <div id="myNav" class="mob-menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -166,59 +167,68 @@
     </footer>
     <script src="js/nav-menu.js"></script>
     <script src="js/mob-menu.js"></script>
-    
-  <script>
+    <!-- <script>
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.getElementById("cont").scrollTop > 50) {
+    document.getElementByClassName("animate").className = "active";
+  }
+}
+</script> -->
+    <script>
     var isScrolling = false;
- 
+
     window.addEventListener("scroll", throttleScroll, false);
- 
+
     function throttleScroll(e) {
-      if (isScrolling == false) {
-        window.requestAnimationFrame(function() {
-          scrolling(e);
-          isScrolling = false;
-        });
-      }
-      isScrolling = true;
-    }
- 
-    document.addEventListener("DOMContentLoaded", scrolling, false);
- 
-    var listItems = document.querySelectorAll("#cont .animate");
-    
- 
-    function scrolling(e) {
- 
-       
-      for (var i = 0; i < listItems.length; i++) {
-        var listItem = listItems[i];
- 
-        if (isPartiallyVisible(listItem)) {
-          listItem.classList.add("active");
-        } else {
-          listItem.classList.remove("active");
+        if (isScrolling == false) {
+            window.requestAnimationFrame(function() {
+                scrolling(e);
+                isScrolling = false;
+            });
         }
-      }
+        isScrolling = true;
     }
- 
+
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+
+    var listItems = document.querySelectorAll("#cont .animate");
+
+
+    function scrolling(e) {
+
+
+        for (var i = 0; i < listItems.length; i++) {
+            var listItem = listItems[i];
+
+            if (isPartiallyVisible(listItem)) {
+                listItem.classList.add("active");
+            } else {
+                listItem.classList.remove("active");
+            }
+        }
+    }
+
     function isPartiallyVisible(el) {
-      var elementBoundary = el.getBoundingClientRect();
- 
-      var top = elementBoundary.top;
-      var bottom = elementBoundary.bottom;
-      var height = elementBoundary.height;
- 
-      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+        var elementBoundary = el.getBoundingClientRect();
+
+        var top = elementBoundary.top;
+        var bottom = elementBoundary.bottom;
+        var height = elementBoundary.height;
+
+        return ((top + height >= 0) && (height + window.innerHeight >= bottom));
     }
- 
+
     function isFullyVisible(el) {
-      var elementBoundary = el.getBoundingClientRect();
- 
-      var top = elementBoundary.top;
-      var bottom = elementBoundary.bottom;
- 
-      return ((top >= 0) && (bottom <= window.innerHeight));
+        var elementBoundary = el.getBoundingClientRect();
+
+        var top = elementBoundary.top;
+        var bottom = elementBoundary.bottom;
+
+        return ((top >= 0) && (bottom <= window.innerHeight));
     }
-  </script>
+    </script>
 </body>
+
 </html>

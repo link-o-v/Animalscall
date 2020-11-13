@@ -106,16 +106,23 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 500px) {
-    .news .news__all-news .news__pic {
-        height: 200px;
-    }
-}
+
 
 @media screen and (max-width: 980px) {
     .news .news__all-news .news__container:nth-child(even) {
         width: 100%;
         background-size: cover;
+    }
+    h1{
+    	padding-top: 10px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .news .news__all-news .news__pic {
+        height: 200px;
+    }
+    h1{
+    	padding-top: 0;
     }
 }
 

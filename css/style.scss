@@ -140,7 +140,7 @@ header {
             padding-left: 10px;
 
             /* border-radius: 10px; */
-            img {
+            svg {
                 height: 20px;
                 margin-right: 5px;
             }
@@ -170,7 +170,7 @@ header {
                 background: $white;
             }
 
-            img {
+            svg {
                 width: 20px;
             }
         }
@@ -187,7 +187,7 @@ header {
             cursor: pointer;
             display: flex;
 
-            img {
+            svg {
                 width: 1.25em;
                 margin-right: 5px;
             }
