@@ -70,7 +70,7 @@ a {
         padding: 5%;
     }
 
-    img {
+    svg {
         width: 2em;
         padding-right: 10%;
     }
@@ -245,7 +245,7 @@ header {
             border-right: 1px solid lighten($grey, 20%);
             padding: 5px;
 
-            img {
+            svg {
                 width: 2.5em;
                 padding-right: 10px;
                 transition: all 500ms ease;
@@ -266,12 +266,12 @@ header {
         a:nth-child(3) {
             flex-direction: column;
 
-            img {
+            svg {
                 width: 1.5em;
             }
 
             &:hover {
-                img {
+                svg {
                     animation: bounce 1s;
                 }
             }

@@ -23,10 +23,10 @@ main {
 
 .news__btn {
   align-self: flex-end; }
-  .news__btn img {
+  .news__btn svg {
     height: 15px;
     padding-right: 10px; }
-  .news__btn:hover img {
+  .news__btn:hover svg {
     animation: bounce-left 1s; }
 
 .news__btn-top {

@@ -49,7 +49,7 @@ a {
     justify-content: space-around;
     align-items: flex-start;
     padding: 5%; }
-  .mob-menu img {
+  .mob-menu svg {
     width: 2em;
     padding-right: 10%; }
 
@@ -173,7 +173,7 @@ header {
       align-items: center;
       border-right: 1px solid rgba(79, 79, 79, 0.8);
       padding: 5px; }
-      .video-nav .video-nav__menu a img {
+      .video-nav .video-nav__menu a svg {
         width: 2.5em;
         padding-right: 10px;
         transition: all 500ms ease; }
@@ -186,9 +186,9 @@ header {
       padding-right: 15px; }
     .video-nav .video-nav__menu a:nth-child(3) {
       flex-direction: column; }
-      .video-nav .video-nav__menu a:nth-child(3) img {
+      .video-nav .video-nav__menu a:nth-child(3) svg {
         width: 1.5em; }
-      .video-nav .video-nav__menu a:nth-child(3):hover img {
+      .video-nav .video-nav__menu a:nth-child(3):hover svg {
         animation: bounce 1s; }
     .video-nav .video-nav__menu a:hover,
     .video-nav .video-nav__menu a:focus {

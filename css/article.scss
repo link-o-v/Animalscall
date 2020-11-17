@@ -65,13 +65,13 @@ main {
 .news__btn {
     align-self: flex-end;
 
-    img {
+    svg {
         height: 15px;
         padding-right: 10px;
     }
 
     &:hover {
-        img {
+        svg {
             animation: bounce-left 1s;
         }
     }
