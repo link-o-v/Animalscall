@@ -121,7 +121,7 @@ header {
         background: #FBF9F9; }
       header .header__right-side .lang-dropdown svg {
         width: 20px; }
-    header .header__right-side .header__right-side__lang:hover .lang-dropdown {
+    header .header__right-side .show {
       display: block; }
     header .header__right-side .header__right-side__login,
     header .header__right-side .header__right-side__register {

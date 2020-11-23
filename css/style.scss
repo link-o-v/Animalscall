@@ -174,11 +174,14 @@ header {
                 width: 20px;
             }
         }
-
-        .header__right-side__lang:hover .lang-dropdown {
+        .show{
             display: block;
         }
 
+        // .header__right-side__lang:hover .lang-dropdown {
+        //     display: block;
+        // }
+        
         .header__right-side__login,
         .header__right-side__register {
             font-size: 1.5em;
